@@ -5,5 +5,5 @@ package com.jocelyn.service;
  */
 public interface ILogin {
 
-    void login(String userName);
+    String login();
 }

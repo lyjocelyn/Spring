@@ -12,7 +12,7 @@ import java.util.Set;
  * Created by Administrator on 2017/9/5/005.
  */
 @RestController
-public class LoginResource {
+public class AutoWiredResource {
 
     @Autowired
     private Set<ILogin> logins;
@@ -21,7 +21,7 @@ public class LoginResource {
     private Map<String, ILogin> loginMap;
 
     @GetMapping("/login")
-    public String login() {
+    public String testAutowired() {
         if (null == loginMap) {
             return "empty";
         }
